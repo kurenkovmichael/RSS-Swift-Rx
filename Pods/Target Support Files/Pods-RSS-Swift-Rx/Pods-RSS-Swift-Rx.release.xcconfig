@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/EVReflection" "$PODS_CONFIGURATION_BUILD_DIR/Hero" "$PODS_CONFIGURATION_BUILD_DIR/Kingfisher" "$PODS_CONFIGURATION_BUILD_DIR/MagicalRecord" "$PODS_CONFIGURATION_BUILD_DIR/RxCocoa" "$PODS_CONFIGURATION_BUILD_DIR/RxKeyboard" "$PODS_CONFIGURATION_BUILD_DIR/RxSwift" "$PODS_CONFIGURATION_BUILD_DIR/TLYShyNavBar" "$PODS_CONFIGURATION_BUILD_DIR/XMLDictionary"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/EVReflection/EVReflection.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Hero/Hero.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Kingfisher/Kingfisher.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MagicalRecord/MagicalRecord.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RxCocoa/RxCocoa.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RxKeyboard/RxKeyboard.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RxSwift/RxSwift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/TLYShyNavBar/TLYShyNavBar.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/XMLDictionary/XMLDictionary.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "EVReflection" -framework "Hero" -framework "Kingfisher" -framework "MagicalRecord" -framework "RxCocoa" -framework "RxKeyboard" -framework "RxSwift" -framework "TLYShyNavBar" -framework "XMLDictionary"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

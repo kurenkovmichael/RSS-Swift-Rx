@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="RSS_Swift_Rx" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoomSlide"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionTextView" destination="5eL-Oy-fUr" id="Op8-kO-PT8"/>
+                <outlet property="pubDateLabel" destination="DJT-OW-Ihh" id="wCN-Yr-bDo"/>
+                <outlet property="titleLabel" destination="oZU-bR-lGd" id="Q4w-t2-XZv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="NewsBackground">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1T-GI-y5y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuM-fr-MjQ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="396"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZU-bR-lGd">
+                                    <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJT-OW-Ihh">
+                                    <rect key="frame" x="16" y="44" width="343" height="18"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                    <color key="textColor" red="0.88323921520000004" green="0.88323921520000004" blue="0.88323921520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5eL-Oy-fUr">
+                                    <rect key="frame" x="16" y="78" width="343" height="302"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="5eL-Oy-fUr" firstAttribute="leading" secondItem="JuM-fr-MjQ" secondAttribute="leading" constant="16" id="DeG-fk-zcg"/>
+                                <constraint firstAttribute="trailing" secondItem="DJT-OW-Ihh" secondAttribute="trailing" constant="16" id="Gxv-KJ-tfo"/>
+                                <constraint firstItem="5eL-Oy-fUr" firstAttribute="top" secondItem="DJT-OW-Ihh" secondAttribute="bottom" constant="16" id="N8w-wK-1Un"/>
+                                <constraint firstAttribute="bottom" secondItem="5eL-Oy-fUr" secondAttribute="bottom" constant="16" id="NrB-Vg-czI"/>
+                                <constraint firstItem="DJT-OW-Ihh" firstAttribute="leading" secondItem="JuM-fr-MjQ" secondAttribute="leading" constant="16" id="ReF-mw-3Dg"/>
+                                <constraint firstItem="DJT-OW-Ihh" firstAttribute="top" secondItem="oZU-bR-lGd" secondAttribute="bottom" constant="4" id="TaR-Ya-M5B"/>
+                                <constraint firstItem="oZU-bR-lGd" firstAttribute="leading" secondItem="JuM-fr-MjQ" secondAttribute="leading" constant="16" id="UsB-B1-sgt"/>
+                                <constraint firstItem="oZU-bR-lGd" firstAttribute="top" secondItem="JuM-fr-MjQ" secondAttribute="top" constant="16" id="fY6-xq-GS9"/>
+                                <constraint firstAttribute="trailing" secondItem="oZU-bR-lGd" secondAttribute="trailing" constant="16" id="m9L-f0-OXZ"/>
+                                <constraint firstAttribute="trailing" secondItem="5eL-Oy-fUr" secondAttribute="trailing" constant="16" id="pfO-VB-SLt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="JuM-fr-MjQ" secondAttribute="bottom" id="R0M-2L-NUB"/>
+                        <constraint firstItem="JuM-fr-MjQ" firstAttribute="top" secondItem="c1T-GI-y5y" secondAttribute="top" id="grm-Qd-W55"/>
+                        <constraint firstAttribute="trailing" secondItem="JuM-fr-MjQ" secondAttribute="trailing" id="oEA-gi-IFt"/>
+                        <constraint firstItem="JuM-fr-MjQ" firstAttribute="leading" secondItem="c1T-GI-y5y" secondAttribute="leading" id="wM7-eW-nQA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="NewsBackground"/>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c1T-GI-y5y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AXD-lc-MJU"/>
+                <constraint firstItem="c1T-GI-y5y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GXC-3u-fOg"/>
+                <constraint firstItem="c1T-GI-y5y" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="WEA-et-LMX"/>
+                <constraint firstItem="c1T-GI-y5y" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="bub-JS-8sr"/>
+                <constraint firstItem="JuM-fr-MjQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="uZ7-IY-odV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="66.5" y="104.5"/>
+        </view>
+    </objects>
+</document>
